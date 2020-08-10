@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2501BB5224E1743100C3F64E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2501BB5124E1743100C3F64E /* AppDelegate.swift */; };
 		2501BB5424E1743100C3F64E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2501BB5324E1743100C3F64E /* SceneDelegate.swift */; };
-		2501BB5624E1743100C3F64E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2501BB5524E1743100C3F64E /* ViewController.swift */; };
 		2501BB5924E1743100C3F64E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2501BB5724E1743100C3F64E /* Main.storyboard */; };
 		2501BB5C24E1743100C3F64E /* ToyMemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2501BB5A24E1743100C3F64E /* ToyMemo.xcdatamodeld */; };
 		2501BB5E24E1743300C3F64E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2501BB5D24E1743300C3F64E /* Assets.xcassets */; };
@@ -20,7 +19,6 @@
 		2501BB4E24E1743100C3F64E /* ToyMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToyMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2501BB5124E1743100C3F64E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2501BB5324E1743100C3F64E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2501BB5524E1743100C3F64E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2501BB5824E1743100C3F64E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2501BB5B24E1743100C3F64E /* ToyMemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToyMemo.xcdatamodel; sourceTree = "<group>"; };
 		2501BB5D24E1743300C3F64E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 			children = (
 				2501BB5124E1743100C3F64E /* AppDelegate.swift */,
 				2501BB5324E1743100C3F64E /* SceneDelegate.swift */,
-				2501BB5524E1743100C3F64E /* ViewController.swift */,
 				2501BB5724E1743100C3F64E /* Main.storyboard */,
 				2501BB5D24E1743300C3F64E /* Assets.xcassets */,
 				2501BB5F24E1743300C3F64E /* LaunchScreen.storyboard */,
@@ -141,7 +138,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2501BB5624E1743100C3F64E /* ViewController.swift in Sources */,
 				2501BB5224E1743100C3F64E /* AppDelegate.swift in Sources */,
 				2501BB5C24E1743100C3F64E /* ToyMemo.xcdatamodeld in Sources */,
 				2501BB5424E1743100C3F64E /* SceneDelegate.swift in Sources */,
