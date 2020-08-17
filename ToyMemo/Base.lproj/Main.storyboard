@@ -88,7 +88,11 @@
                         <viewLayoutGuide key="safeArea" id="LzI-E8-b4X"/>
                     </view>
                     <navigationItem key="navigationItem" title="NEW MEMO" id="Ims-RC-NdA">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kMS-9r-vPk"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="kMS-9r-vPk">
+                            <connections>
+                                <action selector="close:" destination="lPa-tf-cwH" id="fN7-0x-9RT"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="vXt-fx-5mM"/>
                     </navigationItem>
                 </viewController>
