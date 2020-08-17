@@ -59,11 +59,15 @@
         <!--Navigation Controller-->
         <scene sceneID="CaP-wd-ILK">
             <objects>
-                <navigationController id="3FS-0M-9Fy" sceneMemberID="viewController">
+                <navigationController toolbarHidden="NO" id="3FS-0M-9Fy" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="v2v-KB-EZl">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="N3b-vu-yRR">
+                        <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="d0Y-yk-sJ6" kind="relationship" relationship="rootViewController" id="KSp-Jo-9cd"/>
                     </connections>
