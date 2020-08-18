@@ -39,6 +39,7 @@ class MemoListTableViewController: UITableViewController {
         // using에서 전달한 클로저가 queue에서 실행됨.
         token = NotificationCenter.default.addObserver(forName: ComposeViewController.newMemoDidInsert, object: nil, queue: OperationQueue.main, using: {
             [weak self] (noti) in
+            
             self?.tableView.reloadData()
         })
     }
