@@ -25,8 +25,8 @@ class ComposeViewController: UIViewController {
             return
         }
         //제대로 메모가 쓰여있다면 guard문 아래로 실행됨
-        let newMemo = Memo(content: memo)
-        Memo.dummyMemoList.append(newMemo)
+//        let newMemo = Memo(content: memo)
+//        Memo.dummyMemoList.append(newMemo)
         //방송국에서 브로드캐스팅하는것과 같다.
         //앱을 구성하는 모든 객체로 전달됨.
         NotificationCenter.default.post(name: ComposeViewController.newMemoDidInsert, object: nil)
