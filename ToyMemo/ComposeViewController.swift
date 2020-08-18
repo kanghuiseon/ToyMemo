@@ -31,7 +31,6 @@ class ComposeViewController: UIViewController {
         //앱을 구성하는 모든 객체로 전달됨.
         NotificationCenter.default.post(name: ComposeViewController.newMemoDidInsert, object: nil)
         dismiss(animated: true, completion: nil)
-        
     }
     
 }

@@ -18,6 +18,7 @@ class MemoListTableViewController: UITableViewController {
         return f
     }()
     var token: NSObjectProtocol?
+    // 옵저버 삭제
     deinit{
         if let token = token{
             NotificationCenter.default.removeObserver(token)
@@ -37,11 +38,11 @@ class MemoListTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
 //        tableView.reloadData()
 //        print(#function)
-    }
+//    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return Memo.dummyMemoList.count

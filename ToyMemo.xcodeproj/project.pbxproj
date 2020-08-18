@@ -17,6 +17,7 @@
 		2501BB6C24E1850200C3F64E /* MemoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2501BB6B24E1850200C3F64E /* MemoListTableViewController.swift */; };
 		257CEBCA24EABCA500E4338A /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257CEBC924EABCA500E4338A /* ComposeViewController.swift */; };
 		257CEBCC24EABF9200E4338A /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257CEBCB24EABF9200E4338A /* UIViewController+Alert.swift */; };
+		257CEBD924EBA9FF00E4338A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257CEBD824EBA9FF00E4338A /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		2501BB6B24E1850200C3F64E /* MemoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListTableViewController.swift; sourceTree = "<group>"; };
 		257CEBC924EABCA500E4338A /* ComposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		257CEBCB24EABF9200E4338A /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		257CEBD824EBA9FF00E4338A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				2501BB6B24E1850200C3F64E /* MemoListTableViewController.swift */,
 				257CEBC924EABCA500E4338A /* ComposeViewController.swift */,
 				257CEBCB24EABF9200E4338A /* UIViewController+Alert.swift */,
+				257CEBD824EBA9FF00E4338A /* DetailViewController.swift */,
 			);
 			path = ToyMemo;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				2501BB5424E1743100C3F64E /* SceneDelegate.swift in Sources */,
 				2501BB6A24E1828900C3F64E /* Model.swift in Sources */,
 				257CEBCC24EABF9200E4338A /* UIViewController+Alert.swift in Sources */,
+				257CEBD924EBA9FF00E4338A /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
