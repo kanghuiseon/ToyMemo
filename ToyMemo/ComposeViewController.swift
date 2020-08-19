@@ -66,6 +66,7 @@ class ComposeViewController: UIViewController {
             strongSelf.memoTextView.scrollIndicatorInsets = inset
             
         })
+        print(#function)
     }
     // 나타나기 전
     override func viewWillAppear(_ animated: Bool) {
@@ -100,13 +101,15 @@ class ComposeViewController: UIViewController {
             target.content = memo
             NotificationCenter.default.post(name: ComposeViewController.memoDidChange, object: nil)
             DataManager.shared.saveContext()
+            //새로운 메모일 때
         }else{
             //방송국에서 브로드캐스팅하는것과 같다.
             //앱을 구성하는 모든 객체로 전달됨.
-            NotificationCenter.default.post(name: ComposeViewController.newMemoDidInsert, object: nil)
             DataManager.shared.addNewMemo(memo)
+            NotificationCenter.default.post(name: ComposeViewController.newMemoDidInsert, object: nil)
         }
         dismiss(animated: true, completion: nil)
+        print(#function)
     }
     
 }

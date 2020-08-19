@@ -9,7 +9,6 @@
 import UIKit
 
 class MemoListTableViewController: UITableViewController {
-    
     let formatter: DateFormatter = {
         let f = DateFormatter()
         f.dateStyle = .long
@@ -38,7 +37,9 @@ class MemoListTableViewController: UITableViewController {
         // ios에서는 스레드를 직접 처리하지않고 dispatchqueue, operationqueue를 이용해서 처리함
         // using에서 전달한 클로저가 queue에서 실행됨.
         token = NotificationCenter.default.addObserver(forName: ComposeViewController.newMemoDidInsert, object: nil, queue: OperationQueue.main, using: { [weak self] (noti) in
+            print("신호 받음")
             self?.tableView.reloadData()
+            print(#function)
         })
     }
 
@@ -48,8 +49,7 @@ class MemoListTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         DataManager.shared.fetchMemo()
         tableView.reloadData()
-//        tableView.reloadData()
-//        print(#function)
+        print(#function)
     }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -80,7 +80,6 @@ class MemoListTableViewController: UITableViewController {
     }
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete{
-            
             // db삭제
             let target = DataManager.shared.memoList[indexPath.row]
             DataManager.shared.deleteMemo(target)

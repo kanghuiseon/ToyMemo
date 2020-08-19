@@ -39,7 +39,6 @@ class DataManager{
         newMemo.insertDate = Date()
         memoList.insert(newMemo, at: 0)
         saveContext()
-        
     }
     func deleteMemo(_ memo: Memo?){
         if let memo = memo{
