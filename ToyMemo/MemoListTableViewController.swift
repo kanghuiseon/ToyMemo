@@ -37,9 +37,7 @@ class MemoListTableViewController: UITableViewController {
         // ui 업데이트 코드는 반드시 메인스레드에서 실행해야함
         // ios에서는 스레드를 직접 처리하지않고 dispatchqueue, operationqueue를 이용해서 처리함
         // using에서 전달한 클로저가 queue에서 실행됨.
-        token = NotificationCenter.default.addObserver(forName: ComposeViewController.newMemoDidInsert, object: nil, queue: OperationQueue.main, using: {
-            [weak self] (noti) in
-            
+        token = NotificationCenter.default.addObserver(forName: ComposeViewController.newMemoDidInsert, object: nil, queue: OperationQueue.main, using: { [weak self] (noti) in
             self?.tableView.reloadData()
         })
     }
@@ -68,6 +66,21 @@ class MemoListTableViewController: UITableViewController {
         return cell
     }
     
-
-   
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        return .delete
+    }
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete{
+            
+            // db삭제
+            let target = DataManager.shared.memoList[indexPath.row]
+            DataManager.shared.deleteMemo(target)
+            DataManager.shared.memoList.remove(at: indexPath.row)
+            
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
 }
