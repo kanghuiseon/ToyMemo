@@ -130,6 +130,12 @@
                                             <segue destination="hfG-se-SoC" kind="presentation" id="ful-wS-WvN"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="nLj-f0-LdG"/>
+                                    <barButtonItem systemItem="action" id="o8N-ZG-9CW">
+                                        <connections>
+                                            <action selector="share:" destination="QG3-xW-hVr" id="8eI-SC-Sd2"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
