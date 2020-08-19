@@ -66,7 +66,6 @@ class ComposeViewController: UIViewController {
             strongSelf.memoTextView.scrollIndicatorInsets = inset
             
         })
-        print(#function)
     }
     // 나타나기 전
     override func viewWillAppear(_ animated: Bool) {
@@ -109,7 +108,6 @@ class ComposeViewController: UIViewController {
             NotificationCenter.default.post(name: ComposeViewController.newMemoDidInsert, object: nil)
         }
         dismiss(animated: true, completion: nil)
-        print(#function)
     }
     
 }
